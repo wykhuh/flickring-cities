@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+#content {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 1061px){
+  #content {
+    width: 1040px;
+  }
+}
+
+@media (max-width: 1060px){
+  #content {
+    width: 780px;
+  }
+}
+
+@media (max-width: 800px){
+  #content {
+    width: 520px;
+  }
+}
+
+@media (max-width: 540px){
+  #content {
+    width: 260px;
+  }
+}
+
+h1#title {
+  text-align : center;
+  font-size: 1.7em;
+}
+
+h1#place {
+  position: absolute;
+  z-index: 10;
+  top: 4em;
+  right: 0;
+  padding: .3em;
+  font-size: 1.7em;
+  color: black;
+  background: rgba(255,255,255,.7)
+}
+
+.more{
+  background: #ff8586;
+  color: white;
+  text-decoration: none;
+  margin-left: .75em;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 1.4em;
+  height: 1.4em;
+  
+  display: inline-block;
+}
+
+
+.more:hover {
+  background: #e57779;
+}
+
+#map {
+  height: 200px;
+}
+  
+.photo {
+
+  background: black;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  padding:0;
+  display: inline-block;
+}
+
+.photo img, .photo a {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  
+}

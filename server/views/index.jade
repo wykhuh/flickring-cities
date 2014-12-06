@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+  div#content
+    h1#title Flickring Cities = Flickr photos + Random Cities 
+      a.more(href="/") &#8634;
+    div#map
+    h1#place #{place}
+    - var photos = urls
+      each val in photos
+        div.photo
+          a(href=val.link)
+            img(src = val.photo)
+  script(src="/js/map.js")
+
