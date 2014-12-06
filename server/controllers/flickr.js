@@ -1,9 +1,9 @@
   var Flickr = require("node-flickr");
-  var config = require('../config/local.env');
+  var localConfig = require('../config/local.env');
+
+  var config = process.env.VCAP_SERVICES || localConfig;
 
   flickr = new Flickr(config);
-
-  console.log('====', flickr)
 
   var formPhotoUrl = function(data){
     var  url = "https://farm" + data.farm + '.staticflickr.com/' + data.server + '/' + data.id + '_' + data.secret + '_m.jpg';
