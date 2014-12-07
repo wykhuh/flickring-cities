@@ -7,10 +7,14 @@ html(lang='en')
     block css
 
       link(rel = 'stylesheet', href ='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css')
+      link(rel='stylesheet', href='/css/normalize.css')
       link(rel='stylesheet', href='/css/style.css')
     block js
       script(src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js')
       script(src='http://localhost:35729/livereload.js')
       
   body
+    div#header
+      h1 Flickring Cities
+      p Flickr photos + Random Cities 
     block content

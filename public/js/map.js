@@ -4,7 +4,7 @@
 
   var geocoder = L.mapbox.geocoder('mapbox.places-v1'),
     map = L.mapbox.map('map', 'wykhuh.k2lh4n8h'),
-    place = document.getElementById('place');
+    place = document.getElementById('city');
 
 
   // queries Mapbox to get coordinates for a particular city

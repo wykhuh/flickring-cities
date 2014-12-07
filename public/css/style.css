@@ -5,6 +5,17 @@ html {
   box-sizing: inherit;
 }
 
+#header {
+  background: black;
+  color: white;
+  padding: .25rem 1rem;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+}
+
 
 #content {
   margin: 0 auto;
@@ -42,14 +53,9 @@ h1#title {
 }
 
 h1#place {
-  position: absolute;
-  z-index: 10;
-  top: 4em;
-  right: 0;
-  padding: .3em;
+  text-align: center;
   font-size: 1.7em;
   color: black;
-  background: rgba(255,255,255,.7)
 }
 
 .more{
