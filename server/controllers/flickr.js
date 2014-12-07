@@ -1,7 +1,13 @@
   var Flickr = require("node-flickr");
-  var localConfig = require('../config/local.env');
+  console.log('====',process.env.NODE_ENV )
 
-  var config = process.env.VCAP_SERVICES || localConfig;
+  // if loc.env file exists, use it to get Flickr API key
+  try {
+    config = require('../config/local.env');
+  // else set Flickr API key on the server
+  } catch (e) {
+    config = {"api_key": process.env.API_KEY};
+  }
 
   flickr = new Flickr(config);
 
