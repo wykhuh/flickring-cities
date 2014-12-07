@@ -9,11 +9,13 @@ var router = express.Router();
 router.get('/', function(req, res) {
   var results = [];
   // get the name of a random city
-  var city = places.randomPlace();
+  var place = places.randomPlace();
 
   // get photos for a random city
-  flickr.fetchFlickr(city, function(results){
-    res.render('index', { urls: results, place: city });
+  // search flickr for city name;
+  // send city and country to index page
+  flickr.fetchFlickr(place.city, function(results){
+    res.render('index', { urls: results, place: place.place });
   });
 
 });
