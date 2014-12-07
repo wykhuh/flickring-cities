@@ -20,12 +20,15 @@
 
     // search flickr for images that are tagged with the city
      flickr.get("photos.search", {'tags': city,  'sort': 'interestingness-desc', 'per_page': 12}, function(result){
-      // console.log(result.photos.photo);
+      // console.log(result.photos);
 
       if(result.photos) {
         var photos = result.photos.photo;
         for (var i = 0; i < photos.length; i++) {
-          results.push({photo: formPhotoUrl(photos[i]), link: formLinkUrl(photos[i]) } );
+          results.push({photo: formPhotoUrl(photos[i]),
+                       link: formLinkUrl(photos[i]),
+                       title: photos[i].title
+                     } );
         }
       }
 

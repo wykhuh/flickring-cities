@@ -81,19 +81,31 @@ h1#place {
 }
   
 .photo {
-
   background: black;
   position: relative;
   width: 250px;
   height: 250px;
   margin: 5px;
   padding:0;
-  display: inline-block;
+  float: left;
 }
 
 .photo img, .photo a {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  
+}
+
+.photo p {
+  position: absolute;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  background: rgba(0,0,0, .6);
+  margin: 0;
+  z-index: 10;
+}
+
+.photo p.hide {
+  display: none;
 }

@@ -10,6 +10,8 @@ block content
       each val in photos
         div.photo
           a(href=val.link)
-            img(src = val.photo)
+            img(src = val.photo, alt=val.title)
+          p.hide #{val.title}
   script(src="/js/map.js")
+  script(src="/js/main.js")
 
