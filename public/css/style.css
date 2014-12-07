@@ -63,10 +63,12 @@ h1#place {
   color: white;
   text-decoration: none;
   margin-left: .75em;
-  border-radius: 10px;
-  font-size: 1em;
-  width: 1.4em;
-  height: 1.4em;
+  border-radius: 15px;
+  font-size: 23px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: middle;
   
   display: inline-block;
 }
@@ -101,11 +103,11 @@ h1#place {
   color: white;
   padding: 5px;
   width: 100%;
-  background: rgba(0,0,0, .6);
+  background: rgba(0,0,0, 0.6);
   margin: 0;
   z-index: 10;
 }
 
-.photo p.hide {
+.photo .hide {
   display: none;
 }
